@@ -1,2 +1,2 @@
 crontab -e
-0 * * * * date +"%d/%m/%Y %H:%M:%S" | tr -d '\n' | echo "\"$(cat -)\",$(speedtest -f csv)" >> /somewhere/speedtest.log 2>/dev/null
+/usr/bin/date "+%d/%m/%Y %H:%M:%S" | /usr/bin/tr -d '\n' | /bin/echo "\"$(cat -)\",$(speedtest -f csv)" >> /home/julien/speedtest.log
