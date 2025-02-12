@@ -1,0 +1,2 @@
+crontab -e
+0 * * * * date +"%d/%m/%Y %H:%M:%S" | tr -d '\n' | echo "\"$(cat -)\",$(speedtest -f csv)" >> /home/julien/speedtest.log 2>/dev/null
